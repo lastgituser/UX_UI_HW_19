@@ -1,0 +1,67 @@
+
+:root {
+    --color-primary: #101820;
+    --color-secondary: #FFFFFF;
+    --color-accent: #FEE715;
+}
+
+.letsconnect {
+    margin: 2rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading-letsconnect {
+    color: var(--color-secondary);
+}
+
+.letsconnect-link {
+    margin: 1rem;
+}
+
+.letsconnect-links {
+    max-width: 40rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.letsconnect-img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.letsconnect-title {
+    margin: 0;
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+#img-github {
+    filter: invert(1.0);
+}
+
+@media only screen and (max-width: 1100px) {
+    .letsconnect {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .letsconnect {
+        flex-direction: column;
+        margin: 5rem 0;
+        align-items: center;
+    }
+    .heading-letsconnect {
+        text-align: center;
+    }
+    .letsconnect-links {
+        justify-content: flex-start;
+    }
+}

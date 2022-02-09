@@ -1,0 +1,57 @@
+:root {
+    --color-primary: #101820;
+    --color-secondary: #FFFFFF;
+    --color-accent: #FEE715;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "aboutme aboutpic";
+    align-items: center;
+    justify-items: center;
+    grid-gap: 2rem;
+    max-width: 100rem;
+    width: 80vw;
+    height: 80vh;
+    margin: 2rem auto;
+}
+
+.hero-text {
+    grid-area: aboutme;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    max-width: 26rem;
+}
+
+.hero-title {
+    color: var(--color-secondary);
+    margin: 0rem;
+}
+
+.hero-description {
+    color: var(--color-secondary);
+}
+
+.hero-image {
+    grid-area: aboutpic;
+    height: auto;
+    width: 40vw;
+    max-width: 60rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    .hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+                             "aboutpic"
+                             "aboutme"
+    }
+    .hero-image {
+        width: 80vw;
+        max-width: 30rem;
+    }
+}

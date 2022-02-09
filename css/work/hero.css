@@ -1,0 +1,74 @@
+
+:root {
+    --color-primary: #101820;
+    --color-secondary: #FFFFFF;
+    --color-accent: #FEE715;
+}
+
+.hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 0 10vw;
+    max-width: 100rem;
+    margin: 2rem auto;
+}
+
+.hero-title {
+    color: var(--color-secondary);
+}
+
+.hero-work-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "project1 project1 project2"
+                         "project1 project1 project2"
+                         "project3 project4 project4";
+    grid-gap: 1rem;
+    height: 60vh;
+}
+
+.hero-work {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#project-gthr {
+    background-color: #FFE8AE;
+    grid-area: project1;
+}
+
+#project-mpp {
+    background-color: #C8AEFF;
+    grid-area: project2;
+}
+
+#project-dhs {
+    background-color: #AEFFF5;
+    grid-area: project3;
+}
+
+#project-ch {
+    background-color: #A8ABFF;
+    grid-area: project4;
+}
+
+.hero-work-text {
+    color: var(--color-primary);
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-work-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "project1"
+                             "project2"
+                             "project3"
+                             "project4";
+        height: 120vh;
+    }
+}

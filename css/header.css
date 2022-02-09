@@ -1,0 +1,110 @@
+
+:root {
+    --color-primary: #101820;
+    --color-secondary: #FFFFFF;
+    --color-accent: #FEE715;
+}
+
+header {
+    margin: 0 auto;
+    padding: 0 8rem;
+    max-width: 100rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-logo {
+    height: auto;
+    width: 4rem;
+}
+
+.header-links {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header-link {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.24rem;
+    text-decoration: none;
+    color: var(--color-accent);
+}
+
+.hamburger-link {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-menu-input {
+    display: none;
+}
+
+.hamburger-links {
+    display: none;
+}
+
+@keyframes mobileheader {
+    0% {
+        right: -100vw;
+    }
+    100% {
+        right: 4rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 0 4rem;
+    }
+    .hamburger-menu {
+        display: block;
+        background: var(--color-accent);
+        height: 3rem;
+        width: 3rem;
+        mask-image: url(../images/icons/Hamburger_icon.svg);
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+        -webkit-mask-image: url(../images/icons/Hamburger_icon.svg);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        -webkit-mask-size: contain;
+    }
+    .header-links {
+        display: none;
+    }
+    .hamburger-menu-input:checked + header .hamburger-links + .header-logo + .header-links + .hamburger-menu {
+        mask-image: url(../images/icons/x.svg);
+        -webkit-mask-image: url(../images/icons/x.svg);
+        mask-size: contain;
+        -webkit-mask-size: contain;
+    }
+    .hamburger-menu-input:checked + header .hamburger-links {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        right: 4rem;
+        top: 10rem;
+        height: auto;
+        width: calc(100vw - 8rem);
+        background-color: var(--color-secondary);
+        animation: mobileheader 0.2s;
+    }
+    .hamburger-menu-input:checked + header .hamburger-links + .header-logo {
+        opacity: 0;
+    }
+    .hamburger-menu-input:checked + header + .hero, .hamburger-menu-input:checked + header + .hero + .belowthefold, .hamburger-menu-input:checked + header + .hero + .belowthefold + footer {
+        display: none;
+    }
+}
