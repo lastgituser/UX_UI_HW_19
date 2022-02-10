@@ -45,6 +45,10 @@
     margin-top: 2rem;
 }
 
+.case-study-button:hover {
+    background-color: var(--color-secondary);
+}
+
 .case-study-title {
     color: var(--color-secondary);
     margin: 0;

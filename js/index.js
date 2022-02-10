@@ -4,6 +4,7 @@ import { cloudsDraw } from './clouds.js';
 window.onload = function () {
     let myp5 = new p5(starsDraw);
     $('#day-night-toggle').css("display", "block");
+    $('.hero-background-image').css("display", "none");
     $('#day-night-toggle').on('mouseover', function () {
         $(this).css("height", "3rem");
         $(this).css("width", "3rem");

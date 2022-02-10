@@ -35,6 +35,10 @@ header {
     color: var(--color-accent);
 }
 
+.header-link:hover {
+    color: var(--color-secondary);
+}
+
 .hamburger-link {
     text-decoration: none;
     color: var(--color-primary);

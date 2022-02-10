@@ -13,9 +13,13 @@ let cloudsDraw = (p) => {
 
     let clouds = [];
 
+    function cloudRandomHeight() {
+        return p.random(p.windowHeight * 0.5) + p.windowHeight * 0.1
+    }
+
     function Cloud() {
         this.x = p.random(p.windowWidth);
-        this.y = p.random(p.windowHeight * 0.4) + p.windowHeight * 0.1;
+        this.y = cloudRandomHeight();
     }
 
     Cloud.prototype.draw = function() {
@@ -36,11 +40,11 @@ let cloudsDraw = (p) => {
 
     function drawClouds() {
         for (let i = 0; i < 5; i++) {
-            if (clouds.x === p.windowWidth) {
-                clouds.y = p.random(p.windowHeight * 0.4) + p.windowHeight * 0.1;
-            }
             let speed = 5;
             clouds[i].x = (clouds[i].x + speed) % p.windowWidth;
+            if (clouds[i].x < speed) {
+                clouds[i].y = cloudRandomHeight();
+            }
             clouds[i].draw();
         }
     }
