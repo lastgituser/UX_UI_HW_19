@@ -19,7 +19,7 @@ footer {
     align-content: center;
     margin: 4rem 2rem;
     max-width: 100rem;
-    justify-items: center;
+    justify-items: flex-start;
 }
 
 .footer-heading {

@@ -49,6 +49,10 @@ let cloudsDraw = (p) => {
         }
     }
 
+    function skyBackground() {
+        p.background(197, 43, 92);
+    }
+
     p.setup = function() {
         var cnv = p.createCanvas(p.windowWidth, p.windowHeight);
         cnv.position(0, 0);
@@ -56,7 +60,7 @@ let cloudsDraw = (p) => {
         cnv.style("z-index", "-2");
         p.colorMode(p.HSB);
         p.frameRate(20);
-        p.background(255, 0, 100);
+        skyBackground();
         setupClouds();
     }
 
@@ -65,7 +69,7 @@ let cloudsDraw = (p) => {
     }
 
     p.draw = function() {
-        p.background(255, 0, 100);
+        skyBackground();
         drawClouds();
     }
 }

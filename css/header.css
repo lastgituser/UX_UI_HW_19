@@ -101,7 +101,7 @@ header {
     .header-links {
         display: none;
     }
-    .hamburger-menu-input:checked + header .hamburger-links + .header-logo + .header-links + .hamburger-menu {
+    .hamburger-menu-input:checked + header .hamburger-links + .header-logo + #day-night-toggle + .header-links + .hamburger-menu {
         mask-image: url(../images/icons/x.svg);
         -webkit-mask-image: url(../images/icons/x.svg);
         mask-size: contain;
@@ -119,10 +119,10 @@ header {
         background-color: var(--color-secondary);
         animation: mobileheader 0.2s;
     }
-    .hamburger-menu-input:checked + header .hamburger-links + .header-logo {
+    .hamburger-menu-input:checked + header .hamburger-links + .header-logo, .hamburger-menu-input:checked + header .hamburger-links + .header-logo + #day-night-toggle {
         opacity: 0;
     }
-    .hamburger-menu-input:checked + header + .hero, .hamburger-menu-input:checked + header + .hero + .belowthefold, .hamburger-menu-input:checked + header + .hero + .belowthefold + footer {
+    .hamburger-menu-input:checked + header + .hero-background-image, .hamburger-menu-input:checked + header + .hero-background-image + .hero-background-gradient, .hamburger-menu-input:checked + header + .hero-background-image + .hero-background-gradient + .hero, .hamburger-menu-input:checked + header + .hero-background-image + .hero-background-gradient + .hero + .belowthefold, .hamburger-menu-input:checked + header + .hero-background-image + .hero-background-gradient + .hero + .belowthefold + footer {
         display: none;
     }
 }

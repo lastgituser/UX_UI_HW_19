@@ -94,12 +94,11 @@
     height: auto;
     align-self: center;
     justify-self: flex-end;
-    padding: 2rem;
 }
 
 .mockup1 {
     width: auto;
-    height: calc(100vh - 15rem - 15rem - 5rem);
+    height: calc(100vh - 15rem - 15rem);
     max-height: 26rem;
     grid-area: mockup1;
     justify-self: flex-end;
@@ -108,7 +107,7 @@
 
 .mockup2 {
     width: auto;
-    height: calc(100vh - 15rem - 15rem - 5rem);
+    height: calc(100vh - 15rem - 15rem);
     max-height: 26rem;
     grid-area: mockup2;
 }
