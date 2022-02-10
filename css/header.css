@@ -6,8 +6,7 @@
 }
 
 header {
-    margin: 0 auto;
-    padding: 0 8rem;
+    width: 90vw;
     max-width: 100rem;
     height: 5rem;
     display: flex;
@@ -53,6 +52,21 @@ header {
     display: none;
 }
 
+#day-night-toggle {
+    display: block;
+    background: var(--color-accent);
+    height: 2rem;
+    width: 2rem;
+    mask-image: url(../images/icons/pngs/sun.png);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url(../images/icons/pngs/sun.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+}
+
 @keyframes mobileheader {
     0% {
         right: -100vw;
@@ -64,7 +78,7 @@ header {
 
 @media only screen and (max-width: 600px) {
     header {
-        padding: 0 4rem;
+        padding: 0 2rem;
     }
     .hamburger-menu {
         display: block;

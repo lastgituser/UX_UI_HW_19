@@ -50,6 +50,8 @@ footer {
     margin: 0rem 2rem;
     justify-content: space-between;
     max-width: 90rem;
+    width: 90vw;
+    color: var(--color-primary);
 }
 
 .footer-social {
