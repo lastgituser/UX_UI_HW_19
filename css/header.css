@@ -53,7 +53,7 @@ header {
 }
 
 #day-night-toggle {
-    display: block;
+    display: none;
     background: var(--color-accent);
     height: 2rem;
     width: 2rem;
