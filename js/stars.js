@@ -1,5 +1,12 @@
 let starsDraw = (p) => {
 
+    function drawStars() {
+        p.background(32, 37, 76);
+        for (var i = 0; i < 50; i++) {
+            stars[i].draw();
+        }
+    }
+
     var stars = [];
 
     function Star() {
@@ -31,6 +38,7 @@ let starsDraw = (p) => {
             stars.push(new Star());
         }
         p.frameRate(1);
+        p.background(32, 37, 76);
     }
 
     p.windowResized = function() {
@@ -38,10 +46,7 @@ let starsDraw = (p) => {
     }
 
     p.draw = function() {
-        p.background(32, 37, 76);
-        for (var i = 0; i < 50; i++) {
-            stars[i].draw();
-        }
+        drawStars();
     }
 
 }
