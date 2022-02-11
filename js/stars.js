@@ -33,6 +33,7 @@ let starsDraw = (p) => {
         var cnv = p.createCanvas(p.windowWidth, p.windowHeight);
         cnv.position(0, 0);
         cnv.style("display", "block");
+        cnv.style("position", "fixed");
         cnv.style("z-index", "-2");
         for (var i = 0; i < 50; i++) {
             stars.push(new Star());

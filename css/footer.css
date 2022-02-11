@@ -3,6 +3,7 @@
     --color-primary: #101820;
     --color-secondary: #FFFFFF;
     --color-accent: #FEE715;
+    --color-accent-2: #004ca0;
 }
 
 footer {
@@ -35,8 +36,12 @@ footer {
 
 .footer-link {
     text-decoration: none;
-    color: var(--color-primary);
+    color: var(--color-accent-2);
     margin: 1rem 0;
+}
+
+.footer-link:hover {
+    color: var(--color-primary);
 }
 
 .footer-link-text {

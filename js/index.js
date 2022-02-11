@@ -24,6 +24,7 @@ window.onload = function () {
             $(':root').css("--color-primary-transparent", "#FFFFFF00");
             $(':root').css("--color-secondary", "#101820");
             $(':root').css("--color-accent", "#004ca0");
+            $(':root').css("--color-accent-2", "#fee715");
             $('.exp-img').css("filter", "invert(0.0)");
             $('.skill-icon').css("filter", "invert(0.0)");
             $('#img-github').css("filter", "invert(0.0)");
@@ -32,7 +33,7 @@ window.onload = function () {
             $('#img-devskills').attr("src", "images/skillspics/devskills-day.png");
             $(this).css("mask-image", "url(images/icons/pngs/moon.png)");
             $(this).css("-webkit-mask-image", "url(images/icons/pngs/moon.png)");
-            $('.img-logo').css("filter", "hue-rotate(170deg) brightness(0.5) saturate(1.0)")
+            $('.img-logo').css("filter", "hue-rotate(30deg) saturate(1.0) brightness(0.5)")
             let myp5 = new p5(cloudsDraw);
         } else {
             daynight = "night";
@@ -40,6 +41,7 @@ window.onload = function () {
             $(':root').css("--color-primary-transparent", "#10182000");
             $(':root').css("--color-secondary", "#FFFFFF");
             $(':root').css("--color-accent", "#FEE715");
+            $(':root').css("--color-accent-2", "#004ca0");
             $('.exp-img').css("filter", "invert(1.0)");
             $('.skill-icon').css("filter", "invert(1.0)");
             $('#img-github').css("filter", "invert(1.0)");

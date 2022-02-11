@@ -57,6 +57,7 @@ let cloudsDraw = (p) => {
         var cnv = p.createCanvas(p.windowWidth, p.windowHeight);
         cnv.position(0, 0);
         cnv.style("display", "block");
+        cnv.style("position", "fixed");
         cnv.style("z-index", "-2");
         p.colorMode(p.HSB);
         p.frameRate(20);
