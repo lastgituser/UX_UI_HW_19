@@ -3,6 +3,10 @@ let starsDraw = (p) => {
     function drawStars() {
         p.background(32, 37, 76);
         for (var i = 0; i < 50; i++) {
+            let rand = p.random([0, 1]);
+            if (rand) {
+                stars[i].twinkle();
+            }
             stars[i].draw();
         }
     }
@@ -16,10 +20,7 @@ let starsDraw = (p) => {
         this.h = 2;
     }
 
-    Star.prototype.draw = function() {
-        p.noStroke();
-        p.fill(255, 255, 0);
-        p.ellipse(this.x, this.y, this.w, this.h);
+    Star.prototype.twinkle = function() {
         if (this.w == 2) {
             this.w = 3;
             this.h = 3;
@@ -27,6 +28,12 @@ let starsDraw = (p) => {
             this.w = 2;
             this.h = 2;
         }
+    }
+
+    Star.prototype.draw = function() {
+        p.noStroke();
+        p.fill(255, 255, 0);
+        p.ellipse(this.x, this.y, this.w, this.h);
     }
 
     p.setup = function() {
