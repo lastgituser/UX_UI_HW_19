@@ -1,0 +1,35 @@
+
+.whoami {
+    max-width: 30rem;
+    grid-area: whoami;
+    color: var(--color-secondary);
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "wai-title wai-icons"
+                         "wai-description wai-description";
+}
+
+.whoami-title {
+    grid-area: wai-title;
+    margin: auto 0;
+}
+
+.whoami-desc {
+    grid-area: wai-description;
+}
+
+.skills-icons {
+    grid-area: wai-icons;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.skill-icon {
+    filter: invert(1.0);
+    width: auto;
+    height: 2rem;
+    margin: auto;
+}

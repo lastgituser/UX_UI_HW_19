@@ -11,8 +11,18 @@ header {
     height: 5rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+}
+
+.header-back {
+    display: none;
+    height: 5rem;
+    width: 100vw;
+    background-color: var(--color-primary);
+    opacity: 0.3;
+    z-index: -1;
+    position: absolute;
 }
 
 .img-logo {
@@ -58,17 +68,13 @@ header {
 
 #day-night-toggle {
     display: none;
-    background: var(--color-accent);
-    height: 2rem;
-    width: 2rem;
-    mask-image: url(../images/icons/pngs/sun.png);
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-    -webkit-mask-image: url(../images/icons/pngs/sun.png);
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    -webkit-mask-size: contain;
+    align-self: center;
+    height: 4rem;
+    width: 8rem;
+    background-image: url(../images/icons/daynight/night-toggle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 @keyframes mobileheader {

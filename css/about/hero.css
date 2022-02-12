@@ -14,8 +14,7 @@
     grid-gap: 2rem;
     max-width: 100rem;
     width: 80vw;
-    height: 80vh;
-    margin: 2rem auto;
+    height: calc(100vh - 5rem);
 }
 
 .hero-text {

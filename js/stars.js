@@ -1,13 +1,15 @@
 let starsDraw = (p) => {
 
     function drawStars() {
-        p.background(32, 37, 76);
-        for (var i = 0; i < 50; i++) {
+        p.background(210, 100, 36);
+        for (let i = 0; i < 50; i++) {
+            stars[i].draw();
+        }
+        for (let i = 0; i < 50; i++) {
             let rand = p.random([0, 1]);
             if (rand) {
                 stars[i].twinkle();
             }
-            stars[i].draw();
         }
     }
 
@@ -31,8 +33,9 @@ let starsDraw = (p) => {
     }
 
     Star.prototype.draw = function() {
+        p.colorMode(p.HSB);
         p.noStroke();
-        p.fill(255, 255, 0);
+        p.fill(0, 0, 94);
         p.ellipse(this.x, this.y, this.w, this.h);
     }
 
@@ -45,8 +48,9 @@ let starsDraw = (p) => {
         for (var i = 0; i < 50; i++) {
             stars.push(new Star());
         }
+        p.colorMode(p.HSB);
+        p.background(210, 100, 36);
         p.frameRate(1);
-        p.background(32, 37, 76);
     }
 
     p.windowResized = function() {

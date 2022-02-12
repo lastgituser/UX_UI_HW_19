@@ -24,12 +24,12 @@ let cloudsDraw = (p) => {
 
     Cloud.prototype.draw = function() {
         p.noStroke();
-        p.fill(185, 21, 89);
+        p.fill(0, 0, 94);
         p.ellipse(this.x, this.y, 50, 50);
         p.ellipse(this.x + 40, this.y - 10, 70, 70);
         p.ellipse(this.x + 40 + 60, this.y - 10 - 10, 90, 90);
-        p.ellipse(this.x + 40 + 60 + 60, this.y, 50, 50);
-        p.rect(this.x, this.y, 160, 25);
+        p.ellipse(this.x + 40 + 60 + 50, this.y, 50, 50);
+        p.rect(this.x, this.y, 150, 25);
     }
 
     function setupClouds() {
@@ -50,7 +50,7 @@ let cloudsDraw = (p) => {
     }
 
     function skyBackground() {
-        p.background(197, 43, 92);
+        p.background(203, 59, 100);
     }
 
     p.setup = function() {

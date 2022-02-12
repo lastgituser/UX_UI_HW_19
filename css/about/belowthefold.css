@@ -1,0 +1,14 @@
+
+.about-btf {
+    width: 100vw;
+}
+
+.about-btf-container {
+    max-width: 100rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15rem;
+    grid-template-areas: "creds experience whoami";
+    justify-items: center;
+}
