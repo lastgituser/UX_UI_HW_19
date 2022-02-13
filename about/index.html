@@ -10,6 +10,12 @@
         <link rel="stylesheet" type="text/css" href="../css/about/experience.css" />
         <link rel="stylesheet" type="text/css" href="../css/about/creds.css" />
         <link rel="stylesheet" type="text/css" href="../css/about/whoami.css" />
+        <link rel="stylesheet" type="text/css" href="../css/about/edu.css" />
+        <link rel="stylesheet" type="text/css" href="../css/about/stats/stats.css" />
+        <link rel="stylesheet" type="text/css" href="../css/about/stats/tech.css" />
+        <link rel="stylesheet" type="text/css" href="../css/about/stats/tools.css" />
+        <link rel="stylesheet" type="text/css" href="../css/about/stats/skills.css" />
+        <link rel="stylesheet" type="text/css" href="../css/about/stats/languages.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -40,14 +46,136 @@
         </section>
         <section class="about-btf">
             <div class="about-btf-container">
-                <div class="creds">
-                    <div class="degree">
-                        <img class="gt-logo" src="../images/icons/Georgia_Tech_Yellow_Jackets_logo.svg" />
-                        <span class="degree-description">BS CS</span>
+                <div class="edu">
+                    <h1 class="edu-header">Education</h1>
+                    <div class="edu-item" id="degree">
+                        <img class="edu-item-img" src="../images/icons/pngs/graduation-hat.png" />
+                        <h2 class="edu-item-title">BS in CS</h2>
                     </div>
-                    <div class="certificate">
-                        <span class="certificate-description">Cert UX</span>
-                        <img class="gt-logo" src="../images/icons/Georgia_Tech_Yellow_Jackets_logo.svg" />
+                    <div class="edu-item" id="certificate">
+                        <img class="edu-item-img" src="../images/icons/pngs/certificate.png" />
+                        <h2 class="edu-item-title">Cert UX</h2>
+                    </div>
+                    <img class="edu-logo" src="../images/icons/Georgia_Tech_Yellow_Jackets_logo.svg" />
+                </div>
+                <div class="stats" id="stats-tech">
+                    <h1 class="stats-header">Tech</h1>
+                    <div class="stats-list">
+                        <div class="stats-item">
+                            <img class="stats-img" id="tech-docker-img" src="../images/icons/pngs/docker.png" />
+                            <div class="stats-level" id="tech-docker-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="tech-azure-img" src="../images/icons/pngs/azure.png" />
+                            <div class="stats-level" id="tech-azure-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="tech-node-js-img" src="../images/icons/pngs/node-js.png" />
+                            <div class="stats-level" id="tech-node-js-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="tech-git-img" src="../images/icons/pngs/git-logo.png" />
+                            <div class="stats-level" id="tech-git-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="tech-react-img" src="../images/icons/pngs/atom.png" />
+                            <div class="stats-level" id="tech-react-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats" id="stats-tools">
+                    <h1 class="stats-header">Tools</h1>
+                    <div class="stats-list">
+                        <div class="stats-item">
+                            <img class="stats-img" id="tools-figma-img" src="../images/icons/pngs/figma.png" />
+                            <div class="stats-level" id="tools-figma-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="tools-trello-img" src="../images/icons/pngs/trello.png" />
+                            <div class="stats-level" id="tools-trello-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="tools-miro-img" src="../images/icons/pngs/miro.png" />
+                            <div class="stats-level" id="tools-miro-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="tools-google-drive-img" src="../images/icons/pngs/google-drive.png" />
+                            <div class="stats-level" id="tools-google-drive-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="tools-invision-img" src="../images/icons/pngs/invision.png" />
+                            <div class="stats-level" id="tools-invision-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats" id="stats-skills">
+                    <h1 class="stats-header">Skills</h1>
+                    <div class="stats-list">
+                        <div class="stats-item">
+                            <img class="stats-img" id="skills-research-img" src="../images/icons/pngs/research.png" />
+                            <div class="stats-level" id="skills-research-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="skills-sketching-img" src="../images/icons/pngs/pencil.png" />
+                            <div class="stats-level" id="skills-sketching-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="skills-prototyping-img" src="../images/icons/pngs/prototyping.png" />
+                            <div class="stats-level" id="skills-prototyping-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="skills-testing-img" src="../images/icons/pngs/test.png" />
+                            <div class="stats-level" id="skills-testing-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="skills-wireframing-img" src="../images/icons/pngs/wireframe.png" />
+                            <div class="stats-level" id="skills-wireframing-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats" id="stats-languages">
+                    <h1 class="stats-header">Languages</h1>
+                    <div class="stats-list">
+                        <div class="stats-item">
+                            <img class="stats-img" id="languages-js-img" src="../images/icons/pngs/js.png" />
+                            <div class="stats-level" id="languages-js-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="languages-java-img" src="../images/icons/pngs/java.png" />
+                            <div class="stats-level" id="languages-java-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="languages-css-img" src="../images/icons/pngs/css-3.png" />
+                            <div class="stats-level" id="languages-css-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="languages-python-img" src="../images/icons/pngs/python.png" />
+                            <div class="stats-level" id="languages-python-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
+                        <div class="stats-item">
+                            <img class="stats-img" id="languages-html-img" src="../images/icons/pngs/html-5.png" />
+                            <div class="stats-level" id="languages-html-level"></div>
+                            <div class="stats-level-back"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="experience">

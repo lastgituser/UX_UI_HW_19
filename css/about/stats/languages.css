@@ -1,0 +1,28 @@
+
+#stats-languages {
+    grid-area: languages;
+}
+
+#languages-js-level {
+    width: 15rem;
+}
+
+#languages-java-level {
+    width: 11rem;
+}
+
+#languages-python-level {
+    width: 12rem;
+}
+
+#languages-css-level {
+    width: 14rem;
+}
+
+#languages-css-img {
+    filter: brightness(0.0) saturate(1.0) invert(45%) sepia(89%) saturate(4193%) hue-rotate(176deg) brightness(101%) contrast(101%);
+}
+
+#languages-html-level {
+    width: 13rem;
+}

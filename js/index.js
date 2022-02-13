@@ -31,7 +31,7 @@ window.onload = function () {
             $('.exp-img').css("filter", "invert(0.0)");
             $('.skill-icon').css("filter", "invert(0.0)");
             $('#img-github').css("filter", "invert(0.0)");
-            $('#img-footer-github').css("filter", "invert(1.0)");
+            $('.footer-social-img').css("filter", "invert(1.0)");
             $('#img-uxskills').attr("src", "images/skillspics/uxskills-day.png");
             $('#img-devskills').attr("src", "images/skillspics/devskills-day.png");
             $(this).css("background-image", "url(images/icons/daynight/day-toggle.svg)");
@@ -47,7 +47,7 @@ window.onload = function () {
             $('.exp-img').css("filter", "invert(1.0)");
             $('.skill-icon').css("filter", "invert(1.0)");
             $('#img-github').css("filter", "invert(1.0)");
-            $('#img-footer-github').css("filter", "invert(0.0)");
+            $('.footer-social-img').css("filter", "invert(0.0)");
             $('#img-uxskills').attr("src", "images/skillspics/uxskills.png");
             $('#img-devskills').attr("src", "images/skillspics/devskills.png");
             $(this).css("background-image", "url(images/icons/daynight/night-toggle.svg)");

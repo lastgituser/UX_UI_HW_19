@@ -1,0 +1,44 @@
+
+#stats-skills {
+    grid-area: skills;
+}
+
+#skills-research-img {
+    filter: invert(1.0);
+}
+
+#skills-research-level {
+    width: 14rem;
+}
+
+#skills-sketching-img {
+    filter: invert(1.0);
+}
+
+#skills-sketching-level {
+    width: 11rem;
+}
+
+#skills-prototyping-img {
+    filter: invert(1.0);
+}
+
+#skills-prototyping-level {
+    width: 13rem;
+}
+
+#skills-testing-img {
+    filter: invert(1.0);
+}
+
+#skills-testing-level {
+    width: 15rem;
+}
+
+#skills-wireframing-img {
+    filter: invert(1.0);
+}
+
+#skills-wireframing-level {
+    width: 12rem;
+}

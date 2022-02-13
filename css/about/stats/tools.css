@@ -1,0 +1,24 @@
+
+#stats-tools {
+    grid-area: tools;
+}
+
+#tools-figma-level {
+    width: 13rem;
+}
+
+#tools-trello-level {
+    width: 7rem;
+}
+
+#tools-miro-level {
+    width: 14rem;
+}
+
+#tools-google-drive-level {
+    width: 12rem;
+}
+
+#tools-invision-level {
+    width: 9rem;
+}
