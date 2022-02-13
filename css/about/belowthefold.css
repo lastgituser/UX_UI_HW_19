@@ -1,11 +1,13 @@
 
 .about-btf {
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-btf-container {
     max-width: 100rem;
-    margin: 4rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
@@ -13,7 +15,8 @@
                          "edu experience languages"
                          "edu whoami languages"
                          "tech tools skills";
-    grid-row-gap: 4rem;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
     justify-items: center;
     align-items: flex-start;
 }

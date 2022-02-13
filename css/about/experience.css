@@ -2,6 +2,20 @@
 .experience {
     grid-area: experience;
     display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "exp-header"
+                         "exp-content";
+    grid-row-gap: 4rem;
+}
+
+.exp-header {
+    margin: 0;
+    color: var(--color-secondary)
+}
+
+.exp-content {
+    display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "casestudies programming";
@@ -18,20 +32,23 @@
 .exp-div {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 3rem 4rem;
-    grid-template-areas: "exp-img exp-img"
-                         "exp-num exp-desc";
+    grid-template-columns: auto;
+    grid-template-areas: "exp-img"
+                         "exp-desc";
+    grid-column-gap: 2rem;
+    align-items: center;
+    justify-items: center;
 }
 
 .exp-img {
     grid-area: exp-img;
-    width: 6rem;
+    width: 8rem;
     align-self: center;
-    filter: invert(1.0);
+    filter: invert(1.0) opacity(0.15);
 }
 
 .exp-num {
-    grid-area: exp-num;
+    grid-area: exp-img;
     margin: 0;
     color: var(--color-secondary);
 }
