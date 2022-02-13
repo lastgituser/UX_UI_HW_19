@@ -5,14 +5,14 @@
 
 .about-btf-container {
     max-width: 100rem;
-    margin: 0 auto;
+    margin: 4rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
-                         "edu experience whoami"
-                         "tech tools skills"
-                         "languages libraries platforms";
+                         "edu experience languages"
+                         "edu whoami languages"
+                         "tech tools skills";
     grid-row-gap: 4rem;
     justify-items: center;
     align-items: flex-start;
