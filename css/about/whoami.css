@@ -1,6 +1,6 @@
 
 .whoami {
-    max-width: 30rem;
+    max-width: 24rem;
     grid-area: whoami;
     color: var(--color-secondary);
     display: grid;

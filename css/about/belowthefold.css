@@ -9,14 +9,43 @@
 .about-btf-container {
     max-width: 100rem;
     display: grid;
+    padding: 4rem 0;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
-                         "edu experience languages"
-                         "edu whoami languages"
+                         "edu languages experience"
+                         "edu languages whoami"
                          "tech tools skills";
     grid-row-gap: 2rem;
     grid-column-gap: 2rem;
     justify-items: center;
     align-items: flex-start;
+}
+
+@media only screen and (max-width: 1100px) {
+    .about-btf-container {
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "edu experience"
+                             "edu whoami"
+                             "languages tech"
+                             "tools skills";
+        grid-column-gap: 1rem;
+        grid-row-gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .about-btf-container {
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "experience"
+                             "whoami"
+                             "edu"
+                             "languages"
+                             "tech"
+                             "tools"
+                             "skills";
+        grid-row-gap: 4rem;
+    }
 }

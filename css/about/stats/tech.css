@@ -23,10 +23,6 @@
     width: 15rem;
 }
 
-#tech-react-img {
-    filter: brightness(0.0) saturate(1.0) invert(81%) sepia(11%) saturate(4461%) hue-rotate(165deg) brightness(106%) contrast(97%);
-}
-
 #tech-react-level {
     width: 11rem;
 }
