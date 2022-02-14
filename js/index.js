@@ -43,7 +43,7 @@ window.onload = function () {
             $(':root').css("--color-primary-transparent", "#10182000");
             $(':root').css("--color-secondary", "#FFFFFF");
             $(':root').css("--color-accent", "#FEE715");
-            $(':root').css("--color-accent-2", "#1F3A93");
+            $(':root').css("--color-accent-2", "#0F4880");
             $('.exp-img').css("filter", "invert(1.0)");
             $('.skill-icon').css("filter", "invert(1.0)");
             $('#img-github').css("filter", "invert(1.0)");
