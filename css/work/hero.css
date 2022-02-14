@@ -26,6 +26,7 @@
                          "project3 project4 project4";
     grid-gap: 1rem;
     height: 60vh;
+    width: 80vw;
 }
 
 .hero-work {
