@@ -1,10 +1,4 @@
 
-:root {
-    --color-primary: #101820;
-    --color-secondary: #FFFFFF;
-    --color-accent: #FEE715;
-}
-
 .heading-casestudies {
     color: var(--color-secondary);
     margin: 0 4rem;

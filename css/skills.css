@@ -1,10 +1,4 @@
 
-:root {
-    --color-primary: #101820;
-    --color-secondary: #FFFFFF;
-    --color-accent: #FEE715;
-}
-
 .heading-skills {
     color: var(--color-secondary);
     margin: 0 6rem;

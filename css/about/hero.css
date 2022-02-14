@@ -1,9 +1,3 @@
-:root {
-    --color-primary: #101820;
-    --color-secondary: #FFFFFF;
-    --color-accent: #FEE715;
-}
-
 .hero {
     display: grid;
     grid-template-columns: 2fr 3fr;

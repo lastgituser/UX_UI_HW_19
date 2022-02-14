@@ -1,10 +1,4 @@
 
-:root {
-    --color-primary: #101820;
-    --color-secondary: #FFFFFF;
-    --color-accent: #FEE715;
-}
-
 .letsconnect {
     margin: 2rem 4rem;
     display: flex;
